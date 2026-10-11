@@ -8,10 +8,10 @@
 <body>
   <h1>Privacy Policy</h1>
   <p><strong>Effective Date:</strong> October 11, 2026</p>
-  <p><strong>Meta App:</strong> Video Suite Pro</p>
+  <p><strong>App:</strong> Video Suite Pro</p>
   <p><strong>Application:</strong> VSP – Video Suite Pro (tatdigital.com/video-studio-pro)</p>
   <p><strong>Operated by:</strong> TATDigital</p>
-  <p>This policy describes the Facebook and Instagram connection and publishing features of Video Suite Pro.</p>
+  <p>This policy covers the social connection and publishing features of Video Suite Pro: Meta (Facebook and Instagram), TikTok, and Google/YouTube. Sections 1–7 describe Meta; sections 8–10 add TikTok, YouTube, and shared safeguards. Integration availability depends on the features enabled for your account.</p>
 
   <h2>1. Information We Collect</h2>
   <p>When you connect your Facebook or Instagram account to VSP, we access and store the following data through the Meta Graph API:</p>
@@ -58,5 +58,25 @@
 
   <h2>7. Contact</h2>
   <p>For privacy-related questions: <a href="mailto:tatdigital@tatdigital.com">tatdigital@tatdigital.com</a></p>
+
+  <h2>8. TikTok connection and publication</h2>
+  <p>VSP requests <code>user.info.basic</code> to identify your connected TikTok account and <code>video.publish</code> to submit videos you confirm. It stores your TikTok open_id, display name, encrypted access and refresh tokens, granted scopes, expiry information, and connection dates against your VSP account.</p>
+  <p>Before publication, VSP queries TikTok creator information, including the account nickname, username, avatar URL, available privacy settings, and limits on duration, comments, Duet, and Stitch. This information is used to display the destination and applicable publishing options.</p>
+  <p>When you confirm a publication, VSP sends TikTok the selected video's media URL, caption, visibility and interaction choices, and applicable commercial-content and synthetic-content declarations. Publication records include the selected video and destination, these choices, music and branded-content confirmations, dates, processing status, and publication identifiers or links returned by TikTok. VSP uses these records to track and recover the submission result.</p>
+  <p>TikTok connection data is retained while needed for the authorized connection; publication records remain until deletion is requested. You can disconnect TikTok in VSP or withdraw access in TikTok's app-permissions settings. Successful disconnection removes the stored connection and tokens; it does not automatically remove the publication history. Request full deletion by emailing tatdigital@tatdigital.com with your VSP account email and the affected TikTok account. We acknowledge requests within 48 hours and process deletion without undue delay, within a maximum of 30 days unless a shorter applicable deadline is required. This is VSP's service commitment, not a claimed universal 30-day TikTok rule.</p>
+  <p>TikTok processing is subject to its <a href="https://www.tiktok.com/legal/page/eea/privacy-policy/en">Privacy Policy</a>. TikTok's <a href="https://www.tiktok.com/legal/page/global/tiktok-data-sharing-agreement/en">Developer Data Sharing Agreement, sections 3.1(e) and 5.3</a>, requires cooperation with data-subject rights and compliance with applicable data-protection law. Its <a href="https://www.tiktok.com/legal/page/global/tik-tok-developer-terms-of-service/en">Developer Terms, section VI</a>, require deletion of TikTok information on termination. Deleting VSP data does not delete videos already posted to TikTok.</p>
+
+  <h2>9. Google/YouTube connection and publication</h2>
+  <p>VSP uses YouTube API Services. It requests <code>https://www.googleapis.com/auth/youtube.upload</code> to upload the videos you confirm and <code>https://www.googleapis.com/auth/youtube.readonly</code> to identify your channel and read the processing status of videos submitted through VSP. This integration does not request Gmail, Google Drive, or Google Contacts access.</p>
+  <p>VSP reads channel information and stores your channel ID and name, encrypted access and refresh tokens, granted scopes, expiry information, and connection dates against your VSP account. When you confirm an upload, VSP sends YouTube the video file, title, description, visibility, made-for-kids choice, and synthetic-content declaration. Publication records contain the video reference, destination, submitted options, dates, upload and processing status, and video identifiers or links returned by YouTube.</p>
+  <p>This data is used to connect your channel, perform uploads you authorize, show their status, and recover existing submissions. Google/YouTube data obtained through this integration is not used for advertising, profiling, or training generative AI models, and is not sold.</p>
+  <p>You can revoke access in VSP or at <a href="https://security.google.com/settings/security/permissions">Google's security permissions page</a>. For deletion requests or privacy questions, email <a href="mailto:tatdigital@tatdigital.com">tatdigital@tatdigital.com</a>, specifying your VSP account and YouTube channel. Requests concerning stored YouTube user data are handled as soon as possible and within 7 calendar days; revocation through VSP also requires deletion of the associated authorized data within 7 calendar days. Revocation through Google's security page requires deletion as soon as possible and within 30 calendar days. Deleting your VSP account also requires deletion of associated YouTube user data within 7 calendar days. See <a href="https://developers.google.com/youtube/terms/developer-policies">YouTube Developer Policies, III.D.3 and III.E.4</a>.</p>
+  <p>YouTube API metadata is subject to refresh or deletion within 30 calendar days under III.E.4 of those policies; authorization tokens may be retained only while necessary for the active authorization. The Meta retention period in section 4 does not override these YouTube requirements. The current VSP disconnect control revokes authorization and removes connection credentials; it does not automatically purge every publication record. Full-record deletion requests use the contact procedure above.</p>
+  <p>Deleting data held by VSP does not delete your YouTube channel or uploaded videos; manage those directly in YouTube. Your use of YouTube is also subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>10. Shared safeguards and scope</h2>
+  <p>Social authorization tokens are encrypted in the VSP database and used by the server over HTTPS. VSP does not ask for your social-network passwords. The authorization flow uses a secure, HTTP-only browser cookie that expires after 10 minutes to bind the authorization response to the browser that started it.</p>
+  <p>Social data is associated with your VSP account and used for the connection and publication functions described here. The selected media and publishing options are shared with the platform you choose; the VSP hosting and media-storage services process the data needed to operate those functions. Original VSP projects and video files are distinct from social API records and are not automatically removed by disconnecting a social account.</p>
+  <p>See the <a href="data-deletion.html">data-deletion instructions</a> and <a href="terms.html">VSP Terms of Service</a>. General VSP account and website processing is also described in the <a href="https://tatdigital.com/politica-de-privacidad/">TATDigital privacy policy</a>.</p>
 </body>
 </html>
